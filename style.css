@@ -1,0 +1,216 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image:url("https://s7.postimg.cc/958apcw8b/starburst.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    font-family: Florence, cursive;
+    font-size:12pt;
+    }
+
+/* Pour avoir le contenu centré et de même taille */
+#container{
+  width:80%;
+  margin: 0 auto;
+}
+
+/*Présentation du header */
+
+#header{
+  font-family: 'Amatic SC';
+  font-size: 20pt;
+  background:#edeeef;
+  border-radius: 10px;
+  }
+
+/* La taille et la famille de police pour chaque tag */
+
+h2 {
+  font-family: 'Amatic SC';
+  font-size: 28pt;
+}
+li {
+  font-family: 'Amatic SC';
+  font-size: 20pt;
+}
+
+p {
+  font-family: Florence, cursive;
+  font-size:12pt;
+}
+
+/* Pour garder la couleur du lien initial*/
+
+a{color:inherit;}
+
+/* Suppression du soulignage et bordure des liens */
+
+a:link{
+  text-decoration: none;
+  border: none;
+}
+
+/* menu de navigation */
+
+.navmenu{
+    position: relative;
+    float: center;
+    font-family: 'Amatic SC';
+    font-size: 26pt;
+    background:#edeeef;
+    border-radius: 10px;  
+    text-align:center;
+}
+
+/* Avoir la list du menu de navigation sur la même ligne */
+
+.navmenu li{
+  display:inline-block;
+  margin: 10px;
+}
+
+/* Changement de couleur quand on survole avec le pointeur */
+
+.navmenu li a:hover{
+  background-color:#b79109;
+  font-weight:bold;
+  color:#4c0204;
+  border-radius:10px;
+}
+
+/* Alignement de chaque point sur la même ligne et suppression de l'espace entre chaque point généré par la balise et suppression de la balise elle même */
+
+.pmenu ul{
+  display:flex;
+  text-align:center;
+  padding:20px;
+  list-style-type: none;
+  margin-top:-50px;
+}
+
+/* Présentation des images dans 'Performance' avec ajout d'ombre */
+
+.pimages{
+    border-radius: 12px;
+    margin-left: 3%;
+    width: 100%;
+    max-width: 70%;
+    box-shadow:5px 5px #888888
+}
+
+/* Présentation de l'image dans la section 'About Us' */
+
+.aimages{
+    border-radius: 12px;
+    margin-left: 3%;
+    width: 70%;
+    max-width: 60%;
+}
+
+/* Présentation du tableau des prix */
+
+table{
+  width: 100%;
+  padding:10px;
+  margin-top:-20px;
+}
+
+th,td{
+  border:2px solid #6fbaa2;
+  width: 75px;
+  height: 50px;
+  border-radius:10px;
+  border-collapse: collapse;
+  table-layout: auto;
+  font-family: Florence, cursive;
+  font-size:12pt;
+  padding:10px;
+}
+
+/* Changement de présentation quand on survole avec le pointeur dans le tableau*/
+
+.select:hover{
+  background-color:#b79109;
+  font-weight:bold;
+  color:#4c0204;
+  }
+
+/* Présentation du formulaire */
+
+.contactform{
+  max-width:60%;
+  margin: auto;
+  border:2px solid #6fbaa2;
+  padding: 10px;
+  border-radius:15px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+label{
+  display:block;
+  padding: 5px;
+  }
+
+input, #message{
+  display:block;
+  width: 100%;
+  border:2px solid #6fbaa2;
+  padding: 1px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+/* Bouton d'envoie */
+
+#send{
+  border:0;
+  background:#6fbaa2;
+  padding:20px;
+  color:white;
+  margin:auto;
+  width:auto;
+  border-radius:15px;
+  cursor:pointer;
+  }
+
+#send:hover{
+  background-color:#b79109;
+  font-weight:bold;
+  color:#4c0204;
+  }
+
+/* Présentation des images dans 'footer' */
+
+.fimages{
+    display: inline-block;
+    border-radius: 12px;
+    margin-top:20px;
+    margin-left: 3%;
+    width: 500px;
+    height: 100px;
+    max-width: 15%;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+/* filtre noir et blanc quand on survole les images */
+
+.fimages:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* Présentation des sections */
+
+.section{
+  background:#edeeef;
+  padding:2px;
+  border-radius: 10px;
+  }
+

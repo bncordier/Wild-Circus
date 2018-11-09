@@ -1,0 +1,151 @@
+<!-- Codé initialement sur CodePen -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wild Circus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Afin de valider ton code HTML, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ -->
+
+<body>
+   <div id="container">
+        <div id="header">
+            <header>
+                <h1>Wild Circus</h1>
+            </div>
+     
+         <div class="navmenu">
+             <nav>
+                  <ul>
+            <!-- TODO: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page -->
+            <li><a href="#Performances"> Performances</a></li>
+            <li><a href="#About Us"> About Us</a></li>
+            <li><a href="#Prices"> Prices</a></li>
+            <li><a href="#Contact"> Contact</a></li>
+                  </ul>
+            </nav>
+         </div>
+    </header>
+     <hr>
+      <section>
+        <div id="Performances" class="section">
+            <h2>Performances</h2>
+              <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li". Attention, utilise bien le css pour aligner les éléments, tu ne dois pas enlever les balises "li"-->
+      <div class= "pmenu">
+        <ul>
+        <!-- performance 1 -->
+          <li>
+            <h3>Laugh</h3>
+            <img src="https://s7.postimg.cc/wkvbf81bv/Laugh.jpg" class="pimages" alt="">
+            <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+          </li>
+        <!-- performance 2 -->
+          <li>
+            <h3>Dream</h3>
+            <img src="https://s7.postimg.cc/4uyqeemt7/dream.jpg" class="pimages" alt="">
+            <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+         </li>
+         <!-- performance 3 -->
+         <li>
+            <h3>Marvel at</h3>
+           <img src="https://s7.postimg.cc/6ck6px9jf/marvel.jpg" class="pimages" alt="">
+            <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+         </li>
+      </ul>
+      </div>
+     </section>
+
+    <hr/>
+
+    <section>
+      <div id ="About Us" class="section">
+        <h2>About Us</h2>
+        <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
+        <p> Wild Circus is a traditional circus company that offers visually captivating circus performances all around the world.</p>
+        <img src="https://s7.postimg.cc/5ofxkwfor/circus.jpg" class="aimages" alt="">
+         <p>Performing under traditional European-style circus tents. Wild Circus is a "family" of 50 individuals which includes magicians, clowns, performers, coaches aswell as some of the wildest safari animals of the planet.</p>
+        <p>Come to laugh, dream and marvel at our Wild Circus show in a town or city near you.</p>
+     </div>     
+    </section>
+    <hr/>
+    <section>
+     <div id="Prices" class="section">
+     <h2>Prices</h2>
+      <table>
+        <tr>
+          <th> Admissions Fee </th>
+          <th> Child (under 12) </th>
+          <th> Adult </th>
+          <th> Groups (10+) </th>
+          <th> Schools </th>
+        </tr>
+        <tr> 
+          <td>Weekdays (excl. Wednesdays) </td>
+          <td class="select"> €10 </td>
+          <td class="select"> €25 </td>
+          <td class="select"> €15 </td>
+          <td class="select"> <a href="#Contact"> Please Contact us </a> </td>
+        </tr>
+        <tr> 
+          <td>Weekends (incl. Wednesdays) </td>
+          <td class="select"> €15 </td>
+          <td class="select"> €30 </td>
+          <td class="select"> €20 </td>
+          <td class="select"> <a href="#Contact"> Please Contact us </a> </td>
+        </tr>
+      </table>
+      </div>
+    </section>
+    <hr/>
+
+    <section>
+      <div id="Contact" class= "section"><h2>Contact Us</h2>
+      <!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message. Pense bien à ajouter les labels pour les différents champs
+        Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.
+      -->
+      <form action="#" class="contactform">
+        <label for="fullName"> 
+         Name
+        </label>
+        <input type="text" id="fullName" name="fullName"/>
+        
+        <label for="email"> 
+         E-mail address
+        </label>
+        <input type="email" id="email" name="email" placeholder="email@example.com"/>
+        
+        <label for="message"> 
+         Message
+        </label>
+        <textarea id="message" name="message" rows ="5" cols ="60" placeholder="Write your message here"></textarea>
+        
+        <input type="submit" value="SEND" id="send">
+      </form>
+        </div>
+    </section>
+<hr>
+    <footer>
+      <div class="section">
+      <p>Wild Circus by B.CORDIER - April 2018</p>
+        <!--France-ioi image & link-->
+        <a href="http://www.france-ioi.org/user/perso.php?sLogin=bnc&bShow=Afficher" target="_blank">
+        <img src="https://s7.postimg.cc/o6iuvn67f/fioi.png" class="fimages" alt="">
+        </a>  
+        <!--Sololearn image & link-->
+        <a href="https://www.sololearn.com/Profile/9007259" target="_blank">
+        <img src="https://s7.postimg.cc/thxrfvmzv/sololearn.jpg" class="fimages" alt="">
+        </a>
+        <!--Wild Code School image & link-->
+        <a href="https://wildcodeschool.fr/" target="_blank">
+        <img src="https://s7.postimg.cc/uf46owbej/wildcodeschool.png" class="fimages" alt="">
+        </a>
+        <p> * Note: I do not own or have rights to the pictures used on this pen. All pictures belong to their respectful owners * </p>
+        </div>
+    </footer>
+  </div>
+</body>
